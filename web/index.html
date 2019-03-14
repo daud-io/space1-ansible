@@ -17,14 +17,14 @@
 			<h1>
 				Ansible
 			</h1>
-			<h2>Uplink</h2>
+			<!--<h2>Uplink</h2>
 			<ul>
 				<li><a href="ansible.html">Enter Arena</a></li>
 			</ul>
 			
 			<h1>Who's on?</h1>
 			<div id='spectate'>
-			</div>
+			</div>-->
 			<h1>Intercepts</h1>
 			<ul id='intercepts'>
 			</ul>
@@ -39,7 +39,7 @@
      <script type='text/javascript'>
 	var refresh = function()
 	{
-		$.get('http://localhost/api', function(data) {
+		$.get('/api/', function(data) {
 			$('#intercepts').empty();
 			$('#spectate').empty();
 			for(var i=0; i<data.index.length; i++)
