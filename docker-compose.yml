@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  ansible:
+    image: node
+    working_dir: /app
+    command: node index.js
+    ports:
+      - "8012:8012"
+      - "8013:8013"
+    volumes:
+      - ./ansible:/app
+  web:
+    restart: always
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./web:/usr/share/nginx/html

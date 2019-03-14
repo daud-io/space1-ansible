@@ -1,0 +1,33 @@
+{
+    "ships":
+    [
+        [
+            "img/ships/Ship_Blue.png",
+            0
+        ],
+        [
+            "img/ships/Ship_Cyan.png",
+            1
+        ],
+        [
+            "img/ships/Ship_Green.png",
+            2
+        ],
+        [
+            "img/ships/Ship_Orange.png",
+            3
+        ],
+        [
+            "img/ships/Ship_Purple.png",
+            4
+        ],
+        [
+            "img/ships/Ship_Yellow.png",
+            5
+        ],
+        [
+            "img/ships/Ship_Red.png",
+            6
+        ] 
+    ]
+}
