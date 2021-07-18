@@ -2,17 +2,20 @@ version: '3'
 
 services:
   ansible:
-    image: node
+    image: iodaud/ansible-app:4
+    build:
+      context: ansible
     working_dir: /app
     command: node index.js
     ports:
       - "8012:8012"
       - "8013:8013"
-    volumes:
-      - ./ansible:/app
+    
   web:
+    image: iodaud/ansible-web:4
     restart: always
-    image: nginx
+    build:
+      context: web
     ports:
       - "81:80"
     volumes:
